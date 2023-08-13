@@ -50,7 +50,7 @@ const App = () => {
 			setPoints((prev) => prev + question.points);
 		}
 
-		setAnswer(index);
+		setAnswer(i);
 	};
 
 	const handleStartQuiz = () => {
@@ -75,6 +75,8 @@ const App = () => {
 		setIndex(0);
 		setPoints(0);
 	};
+
+	console.log(answer);
 
 	return (
 		<div className="app">
