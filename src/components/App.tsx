@@ -8,7 +8,6 @@ import Main from './Main';
 import ErrorMessage from './ErrorMessage';
 import Question from './Question';
 import Progress from './Progress';
-import Timer from './Timer';
 import Loader from './Loader';
 import Footer from './Footer';
 import NextButton from './NextButton';
@@ -76,8 +75,6 @@ const App = () => {
 		setPoints(0);
 	};
 
-	console.log(answer);
-
 	return (
 		<div className="app">
 			<Header />
@@ -107,7 +104,6 @@ const App = () => {
 						/>
 
 						<Footer>
-							<Timer />
 							<NextButton
 								count={count}
 								answer={answer}
